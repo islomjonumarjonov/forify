@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@400;700&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .cite-container {
+    @apply lg:max-w-7xl md:max-w-2xl sm:max-w-xl mx-auto px-5;
+  }
+
+  main {
+    @apply flex-grow;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  #root {
+    @apply flex flex-col;
+  }
+
+  .active {
+    @apply opacity-80;
+  }
+}
