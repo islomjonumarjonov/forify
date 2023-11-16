@@ -31,7 +31,7 @@ function Signup() {
   };
   return (
     <div className="flex h-full cite-container justify-center">
-      {/* <form
+      <form
         onSubmit={handleSubmit}
         className="border-r-2 px-5 w-fullmax-w-xl py-10 flex flex-col justify-center items-center"
       >
@@ -76,9 +76,9 @@ function Signup() {
           />
         </div>
         <button className="btn btn-primary my-10">Signup</button>
-        {/* google 
-      </form> */}
-      <div className="px-5 py-10 flex flex-col gap-10">
+      </form>
+      {/* google 
+      {/* <div className="px-5 py-10 flex flex-col gap-10">
         <h2 className="text-3xl">SignUp with:</h2>
         <Link className="btn btn-primary" onClick={handleClick}>
           <span>
@@ -86,7 +86,7 @@ function Signup() {
           </span>
           Google
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
