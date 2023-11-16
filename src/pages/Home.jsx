@@ -2,7 +2,6 @@ import React from "react";
 import Window from "../components/Window";
 import Search from "../components/Search";
 import { Link } from "react-router-dom";
-import Filter from "../components/Filter";
 
 function Home(user) {
   const profile = user.user;
