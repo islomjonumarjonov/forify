@@ -33,7 +33,7 @@ function Signup() {
     <div className="flex h-full cite-container justify-center">
       <form
         onSubmit={handleSubmit}
-        className="border-r-2 px-5 w-fullmax-w-xl py-10 flex flex-col justify-center items-center"
+        className="border px-5 w-fullmax-w-xl py-10 flex flex-col justify-center items-center"
       >
         <h1 className="text-3xl">Signup</h1>
         <div className="form-control w-full max-w-xs">
