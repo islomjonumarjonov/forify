@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAcLgV20YR9tpBFYTTaujrc0CU7qt5cx9w",
-  authDomain: "forify-frs.netlify.app",
+  authDomain: "forify-frss.netlify.app/",
   projectId: "forify-8f47d",
   storageBucket: "forify-8f47d.appspot.com",
   messagingSenderId: "610981500126",
@@ -14,7 +14,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const auth = getAuth();
+const auth = getAuth(app);
 
 const provider = new GoogleAuthProvider();
 
