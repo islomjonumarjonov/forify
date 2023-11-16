@@ -13,6 +13,9 @@ function Profile(user) {
         <h2 className="text-xl">
           Email: <span className="text-neutral-100 text-  xl">{email}</span>
         </h2>
+        <Link className="btn btn-primary hover:btn-outline" to="signUp">
+          SignUp
+        </Link>
       </div>
     );
   } else if (user.user) {
