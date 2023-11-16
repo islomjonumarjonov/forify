@@ -6,7 +6,7 @@ function Search() {
   const [input, setInput] = useState("");
   const searchText = useRef();
   return (
-    <>
+    <div className="flex flex-col">
       <form className="flex py-4">
         <button
           onClick={(e) => {
@@ -38,7 +38,7 @@ function Search() {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

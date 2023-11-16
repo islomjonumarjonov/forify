@@ -9,17 +9,18 @@ export function useSignUp() {
   const { dispatch } = useGlobalContext();
 
   const signUp = (displayName, email, password) => {
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(async (user) => {
-        await updateProfile(auth.currentUser, {
-          displayName,
-        });
-        dispatch({ type: "LOGIN", payload: user });
-        toast.dark("You signed up");
-      })
-      .catch((error) => {
-        setError(error);
-      });
+    const user = { displayName, email, password };
+    dispatch({ type: "LOGIN", payload: user });
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then(async (user) => {
+    //     await updateProfile(auth.currentUser, {
+    //       displayName,
+    //     });
+
+    //   })
+    //   .catch((error) => {
+    //     setError(error);
+    //   });
   };
 
   return { signUp, error };

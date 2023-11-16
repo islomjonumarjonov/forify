@@ -11,7 +11,7 @@ function Home(user) {
     <div className="cite-container">
       <div className="flex justify-between items-center">
         {profile && <Search />}
-        <Filter />
+        {/* <Filter /> */}
       </div>
       <div>
         <Window className="w-full" user={user} />

@@ -18,6 +18,10 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     signUp(displayName, email, password);
+    {
+      displayName && toast.dark("You signed up");
+      // toast.dark("Please refresh this site");
+    }
   };
 
   const handleClick = () => {
@@ -75,7 +79,9 @@ function Signup() {
             }}
           />
         </div>
-        <button className="btn btn-primary my-10">Signup</button>
+        <button onClick={handleSubmit} className="btn btn-primary my-10">
+          Signup
+        </button>
       </form>
       {/* google 
       {/* <div className="px-5 py-10 flex flex-col gap-10">

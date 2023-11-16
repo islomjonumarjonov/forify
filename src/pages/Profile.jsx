@@ -2,16 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Profile(user) {
-  const profile = user.user;
-  const {
-    accessToken,
-    email,
-    photoURL,
-    displayName: nick,
-    phone_number: phone,
-  } = profile;
-  console.log(profile);
-  if (photoURL) {
+  if (user) {
+    const { displayName, email, password } = user.user;
+    console.log(displayName, "DISPLAY");
+    return (
+      <div className="cite-container">
+        <h1 className="text-xl">
+          User: <span className="text-neutral-100 text-3xl">{displayName}</span>
+        </h1>
+        <h2 className="text-xl">
+          Email: <span className="text-neutral-100 text-  xl">{email}</span>
+        </h2>
+      </div>
+    );
+  } else if (user.user) {
+    const profile = user.user;
+    const {
+      accessToken,
+      email,
+      photoURL,
+      displayName: nick,
+      phone_number: phone,
+    } = profile;
+    console.log(profile);
     return (
       <div className="cite-container flex gap-10">
         <div>
